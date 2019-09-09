@@ -1,0 +1,460 @@
+/* tüm elementler için */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: 'Raleway',sans-serif;
+     overflow-y: scroll;/* taşan içerik y ekseninde kaydırma çubuğu ile görüntülenir*/
+     overflow-x: hidden/*x ekseni kırpılır*/
+} 
+p{
+    font-size: 19px;
+}
+
+/*generic css*/
+.section-title{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+.section-title h2{
+    position: relative;/* ilişkilendirme*/
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.section-title h2:after{/*çizgi oluşturma*/
+content: "";
+position: absolute;
+bottom: -20px;
+left:50%;
+width: 60px;
+height: 3px;
+background-color: #5B32AE;
+ margin-left: -30px;
+}
+.section-title p{
+    color:#333;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 45px;
+}
+/*header*/
+
+.header{
+    background-image: url("../images/image7.jpg");
+    background-attachment: fixed;/*ek dosya*/
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size:cover; /*farklı browserlar*/
+    -o-background-size:cover; 
+    -webkit-backdrop-size: cover
+
+}
+
+.header-overlay{
+    background-color: rgba(8, 8, 8, 0.4);
+}
+.header-animal img{
+    margin-bottom: 120px;
+    }
+    #img6,#logo2{
+        border-radius: 10px;
+    }
+.logo {
+        padding-bottom: 70px;
+        padding-top: 70px;       
+}
+
+.header-text h1{
+    text-transform: uppercase;
+    color: azure;
+}
+.header-text p{
+    color:beige;
+    font-size: 18px;
+}
+.header-btns{
+    margin-bottom: 50px;
+    margin-top: 130px;
+}
+/*5B32AE*/
+.btn-download,
+.btn-download:focus,
+.btn-download:active,
+.btn-download:visited
+{
+    background: transparent;
+    color: rgb(104, 71, 170);
+    border-color:  rgb(104, 71, 170);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border-width: 3px;
+    transition: all 1s;/*geçiş 1 saniye*/
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+
+}
+.btn-download:hover{
+    background-color: #5B32AE;
+    color: #fff;
+}
+
+.btn-tour,
+.btn-tour:focus,
+.btn-tour:active,
+.btn-tour:visited{
+
+    color:rgb(196, 193, 193);
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    border-width: 3px;
+    background: transparent;
+    transition: all 1s;/*geçiş 1 saniye*/
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.btn-tour:hover{
+    color: #fff;
+}
+.btn-tour i{
+    font-size: 25px;
+    padding-left: 5px;
+    color:  rgb(104, 71, 170);
+}
+/* About Us*/
+
+.choose-us-wrapper{
+    padding-top: 50px;
+
+}
+.about-flamingo{
+    margin-top: 60px;
+}
+.choose-us-title {
+    padding-bottom: 50px;
+}
+.choose-us-title h2{
+    position: relative;/* ilişkilendirme*/
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 37px; 
+    text-transform: uppercase;
+}
+.choose-us-title h2:after{
+    content: "";
+position: absolute;
+bottom: -18px;
+left:50%;
+width: 70px;
+height: 2.5px;
+background-color: #5B32AE;
+ margin-left: -24px;
+}
+.choose-us-title p{
+    margin-top: 40px;
+    line-height: 24px; 
+}
+.choose-us-item{
+    position: relative;
+    padding-bottom: 4px;
+    padding-left: 80px;
+}
+.choose-us-item div{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.choose-us-item div i{
+    font-size: 55px;
+    color: #5B32AE;
+    transition: all 1s;/*geçiş 1 saniye*/
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.choose-us-item h3{
+    color: #343434;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.choose-us-item p{
+    color: #727272;
+    font-size:17px;
+}
+/* testimonial*/
+
+.testimonial{
+    background-image: url("../images/images2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+     background-size: cover;
+    -moz-background-size:cover; 
+    -o-background-size:cover; 
+    -webkit-background-size:cover;  
+    background-position:  50%50%;
+
+}
+.testimonial-overlay{
+    background-color: rgba(8, 8, 8, 0.6);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.carousel-indicators{
+    bottom: -35px;
+}
+.carousel-inner .item img{
+    border:2px solid rgb(245, 153, 214);;
+    border-radius: 50%;
+    padding: px;
+}
+.testimonial-caption{
+     padding-bottom:60px;
+ }
+ .testimonial-caption h2{
+        color: rgb(235, 155, 201);
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 30px;
+        margin-top: 25px;
+ }
+  
+.testimonial-caption h4{
+color:  rgb(235, 155, 201);
+}
+.testimonial-caption h4 span{
+    color: #fff;
+    font-style: italic;
+    font-weight: 300;
+}
+.testimonial-caption p{
+    color: rgb(209, 202, 202);
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 40px;
+}
+
+/*features section*/
+.features-inner-wrapper{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.left-features-item{
+ position: relative;
+ padding-right: 90px;
+ margin-bottom: 120px;
+ text-align:right;
+ margin-top: 80px;
+}
+.left-features-item-icon{
+position: absolute;
+top:-8;
+right: 0;
+font-size: 40px;
+color: rgb(17, 17, 17);
+width: 90px;
+height: 90px;
+text-align: center; 
+}
+.left-features-item h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 21px;
+    color: #333;
+}
+.left-features-item p{
+    color: #333;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.right-features-item{
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 120px;
+    text-align:left;
+    margin-top: 80px;
+   }
+   .right-features-item-icon{
+   position: absolute;
+   top:0;
+   left:0;
+   font-size: 40px;
+   color: rgb(17, 17, 17);
+   width: 90px;
+   height: 90px;
+   text-align: left; 
+   }
+   .right-features-item h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 21px;
+    color: #333;
+   }
+   .right-features-item p{
+    color: #333;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+   }
+.feature-flamingo img{
+    width: 100%;
+}
+
+/*pruchase now*/
+
+.purchase-now{
+    background-color: rgb(52, 53, 52);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.purchase-now p{
+    color: #dfdfdf;
+    font-size: 20px;
+    font-weight: 300;
+}
+.btn-pruchase-now,
+.btn-pruchase-now:active,
+.btn-pruchase-now:focus,
+.btn-pruchase-now:visited
+{
+
+    background-color: #5B32AE;
+    border: 1px solid #5B32AE;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3opx;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.btn-pruchase-now:hover{
+    background-color: rgb(114, 82, 179);
+}
+
+/*counter section*/
+
+.counter{
+    background-image: url(../images/image2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size:cover; 
+    -o-background-size:cover; 
+    -webkit-background-size:cover;  
+    background-position: 50% 50%;
+}
+.counter-overlay{
+    padding-top:120px;
+    padding-bottom: 120px; 
+    background-color: rgba(8, 8, 8, 0.3);
+}
+.counter-item i{
+    color: rgb(216, 216, 219);
+    font-size: 60px;
+}.counter-item h2{
+    color: rgb(219, 216, 216);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:35px;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+.counter-item p{
+    color: rgb(171, 171, 172);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/*download now*/
+
+.download-now img{
+    width: 100%;
+    margin-top: -75px;
+}
+.available-on{
+    background-color: rgb(52, 53, 52);
+    position: relative;
+    margin-top: -8px;
+}
+.available-title{
+    padding-top: 75px;
+}
+.available-title h2{
+    color: #dfdfdf;
+    font-size: 30px;
+}
+.available-title p{
+    color: #B5B5B5;
+    font-size: 17px;
+    
+}
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.available-on-item{
+    text-align: center;
+    min-height: 230px;
+    padding-bottom: 15px;
+    position: relative;
+    transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -o-transition: all 0.75s;
+}
+.available-on-item:hover{
+    background-color: rgb(44, 44, 44);
+}
+.available-on-item i{
+    color: #5B32AE;
+    text-align: center;
+    opacity: 1;
+    font-size: 60px;
+    padding-top: 90px;
+    transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -o-transition: all 0.75s;
+}
+.available-on-item:hover i{
+    opacity: 0;
+}
+.available-on-inner{
+    position: absolute;/* item a göre konumlanacak*/
+    bottom: 83px;
+    width: 100%;
+    opacity: 0;
+}
+.available-on-inner h2{
+    color: #dfdfdf;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+}
+.available-on-item:hover div.available-on-inner{
+    opacity: 1;
+}
