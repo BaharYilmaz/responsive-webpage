@@ -1,0 +1,36 @@
+/* small devices*/
+
+@media only screen and (max-width:767px){
+   .navbar-default{
+       background-color: #fff !important;
+       
+   }
+   .about-flamingo img{
+      width: 100%;
+   }
+   .purchase-now .col-md-3{
+       text-align: center;
+       padding-top: 50px;
+   }
+}
+
+/*small devices and tablets*/
+@media only screen and (max-width:768px){
+.header-animal{
+    display: none;
+}
+.header-text, .header-btns{
+text-align: center;
+}
+
+}
+
+/*medium devices ,desktop*/
+@media only screen and (min-width:992px){
+
+}
+
+/*large devices,wide screen*/
+@media only screen and (min-width:1200px){
+
+}

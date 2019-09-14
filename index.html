@@ -6,6 +6,11 @@
     <head>
             <title>Lorem ipsum page </title>
             <meta charset="utf-8">
+
+            <!--seo optimization-->
+            <meta name="description" content="responsive website html5, css, js, jquery, bootstrap">
+            <meta name="keywords"content="web,design, html5, css, javascript, jquery, bootstrap,development">
+
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- cihazın ekran genişliği,initial-scale ölçekli gösterme 0-10.0,1->ölçeklenmeden gösterilir -->
            
@@ -15,20 +20,61 @@
              <!-- favicon -->
              <link rel="icon" href="images/logo1.png" type="image/png">
 
+             <!-- css-->
             <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+            <!--fontawesome-->
             <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+                        
+            <!--animate css-->
+            <link rel="stylesheet" type="text/css" href="css/animate.css">
+          
             <link rel="stylesheet" type="text/css" href="css/style.css">
-            
-           
+
+            <!--bx slider css-->
+            <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+
+            <!--responsive css-->
+            <link rel="stylesheet" type="text/css" href="css/responsive.css">         
            
     </head>
     
     
     <body>
        <!--header-->
-        <header class="header">
-            <div class="header-overlay"><!--transparan-->
+        <header class="header" id="HOME">
+            <!--Navigation-->
+            <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#flamingo-navbar-collapse-1" aria-expanded="false" >
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <!--small size logo-->
+                        <img src="images/logo-small.png" alt="logo">
+                    </a>
+                </div>
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                 <div class="collapse  navbar-collapse" id="flamingo-navbar-collapse-1">
+                     <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#HOME" class="nav-item">HOME</a></li>
+                         <li><a href="#ABOUT" class="nav-item">ABOUT</a></li>
+                         <li><a href="#FEATURES" class="nav-item">FEATURES</a></li>
+                         <li><a href="#SCREENS" class="nav-item">SCREENS</a></li>
+                         <li><a href="#DOWNLOAD" class="nav-item">DOWNLOAD</a></li>
+                         <li><a href="#CONTACT" class="nav-item">CONTACT</a></li>
+                     </ul>
+                 </div>
+                </div>
+
+            </nav>
+            <div class="header-overlay"><!--transparan-->
+                <div class="container header-container">
                     <div class="row">
                         <div class="col-md-12">
                             <!--logo-->
@@ -47,8 +93,8 @@
                             </div>
                             <div class="header-btns">
                                 <!--header buttons-->
-                                <a  class="btn btn-download" href="#">Download</a>
-                                <a class="btn btn-tour" href="#">Take A Tour
+                                <a  class="btn btn-download wow fadeInLeft" href="#">Download</a>
+                                <a class="btn btn-tour wow fadeInRight" href="#">Take A Tour
                                     <i class="fa fa-angle-down"></i><!--fontavesome icon-->
                                 </a>
                                
@@ -70,7 +116,7 @@
 
         </header>
         <!--about us-->
-        <section>
+        <section id="ABOUT">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1"><!--1 kolonu sağa atma-->
@@ -88,11 +134,11 @@
                     <div class="row">
                         <div class="col-md-6">
                                 <!--about flamingo-->
-                        <div class="about-flamingo">
-                                <img src="images/images.jpeg" alt="flamingo">
+                        <div class="about-flamingo wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                                <img class="img-responsive" src="images/images.jpeg" alt="flamingo">
                         </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                             <!--why choose us title-->
                             <div class="choose-us-title">
                                 <h2> Why Choose Us?</h2>
@@ -101,23 +147,23 @@
 
                             </div>
                             <!--why choose us des-->
-                            <div class="choose-us-des">
+                            <div class="choose-us-des  ">
                                 <!--choose us item 1 yıldırım-->
-                                <div class="choose-us-item">
+                                <div class="choose-us-item  wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
                                     <div><i class="fa fa-bolt"></i></div>
                                     <h3>QUISQUE LACUS DUI</h3>
                                     <p>Lipsum Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque lacus dui, interdum sit amet varius a, cursus sit amet sapien. Donec eu placerat nisi.</p>
                                 
                                 </div>
                                 <!--choose us item 2 borozon-->
-                                <div class="choose-us-item">
+                                <div class="choose-us-item  wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
                                         <div><i class="fa fa-bullhorn"></i></div>
                                         <h3>DONEC EU PLACERAT NISI</h3>
                                         <p>Diso Lipsum Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque lacus dui, interdum sit amet varius a, cursus sit amet sapien. Donec eu placerat nisi.</p>
                                 
                                 </div>
                                 <!--choose us item 2 bayrak-->
-                                <div class="choose-us-item">
+                                <div class="choose-us-item  wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
                                         <div><i class="fa fa-flag-o"></i></div>
                                         <h3>PERSPICIATIS UNDE OMNIS</h3>
                                         <p>Sed ut perspiciatis Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.unde omnis iste natus error sit.</p>
@@ -138,7 +184,7 @@
             <div class="testimonial-overlay">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 wow bounceInDown">
                             <div id="carousel-testimonial"class="carousel slide" data-ride="carousel"><!--kaydırma,atlıkarınca-->
                                 <!--indicators/gösterge-->
                                 <ol class="carousel-indicators">
@@ -194,11 +240,11 @@
 
         <!--feautures section-->
 
-        <section class="features">
+        <section class="features" id="FEATURES">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
-                        <div class="section-title">
+                        <div class="section-title wow fadeIn" data-wow-duration="1s">
                             <h2>Features</h2>
                             <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.”</p>
                              
@@ -209,8 +255,8 @@
             </div>
             <div class="features-inner-wrapper">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
+                    <div class="row"> 
+                        <div class="col-md-4 wow fadeInLeft" data-wow-duration="1s">
                             <!-- left features item 01-->
                             <div class="left-features-item">
                                 <!--Icon-->
@@ -244,10 +290,10 @@
                         </div>
                         <div class="col-md-4">
                             <div class="feature-flamingo">
-                                <img src="images/feature-flamingo.jpg" alt="feature flamingo">
+                                <img class="wow bounceIn img-responsive" data-wow-duration="1s" src="images/feature-flamingo.jpg" alt="feature flamingo">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 wow fadeInRight" data-wow-duration="1s">
                             <!-- right features item 01-->
                             <div class="right-features-item">
                                     <!--Icon-->
@@ -297,7 +343,7 @@
             </div>
         </section>
         <!--screens-->
-       <section class="screens">
+       <section class="screens" id="SCREENS">
             <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
@@ -309,14 +355,18 @@
                       
                     </div>
             </div>
-            <div class="section-slider">
-                <div class="carousel">
-                    <div class="item">
-                        <img src="images/screen1.jpg" alt="">
-                    </div>
-                    <div class="item">
-                            <img src="images/screen2.jpg" alt="">
+            <div class="screen-slider wow bounceInRight" data-wow-duration="1s">
+                <div class="container">
+                    <div class="row">
+                        <div class="bxSlider">
+                                <div>
+                                    <img src="images/screen1.jpg" alt="screen">
+                                </div>
+                                <div>
+                                    <img src="images/screen2.jpg" alt="screen">
+                                 </div>
                         </div>
+                   </div>
                 </div>
             </div>
        </section>
@@ -324,7 +374,7 @@
        <!--counters-->
        <section class="counter">
            <div class="counter-overlay">
-               <div class="container">
+               <div class="container wow bounceInLeft" data-wow-duration="1s">
                    <div class="row text-center">
                        <div class="col-md-4">
                            <div class="counter-item">
@@ -354,7 +404,7 @@
 
 
        <!--download now section-->
-       <section class="download-now">
+       <section class="download-now" id="DOWNLOAD">
            <div class="container">
                <div class="row">
                    <div class="col-md-10 col-md-offset-1">
@@ -367,8 +417,8 @@
            </div>
            <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <img src="images/images1.png" alt="download image">
+                <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-duration="1s">
+                    <img class="img-responsive"src="images/images1.png" alt="download image">
                 </div>
             </div>
 
@@ -380,7 +430,7 @@
                <div class="row">
                    <div class="col-md-6">
                        <div class="available-title">
-                           <h2>Available Now</h2>
+                           <h2>Available On</h2>
                            <p>Vestibulum congue eros ac neque dignissim, vel imperdiet neque consectetur. Maecenas condimentum cursus maximus. Praesent eu diam efficitur</p>    
                        </div>
                     </div>
@@ -429,8 +479,92 @@
               
            </div>
        </section>
+ 
+        <!--contact us section-->
+        <section class="contact-us" id="CONTACT">
+            <div class="container wow bounceIn">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="section-title">
+                         <h2>Contact Us</h2>
+                         <p>Nulla blandit sem sed neque pretium mattis. Etiam consectetur eleifend felis porttitor porttitor. Phasellus sit amet augue fringilla, fringilla lectus at, tincidunt ante.</p>
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us-form">
+                <div class="container">
+                    <form action="" role="form">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id=name placeholder="Name">
+                                <input type="email" class="form-control" id=email placeholder="Email">
+                                <input type="text" class="form-control" id=subject placeholder="Subject">
+                            </div>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" cols="30" rows="10" placeholder="Message text..."></textarea>
+                                <button type="button" class="btn btn-default submit-btn form_submit">SEND</button>
+                             </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow bounceInLeft">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </section>
+
+        <!--Footer section-->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-md-6">
+                        <div id=copyright>
+                            <p>Source &copy; 2019 <a href="#">-Flamingo</a></p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="scroll-top">
+                                <a href="#HOME" id="scroll-top" ><i class="fa fa-angle-up"></i></a>
+                        </div>
+                    </div>
+                 </div> 
+            </div>
+        </footer>
+
+
+        <!--Bootstrap Javascript-->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <!--bx slider js-->
+        <script src="js/jquery.bxslider.min.js"></script>
+
+        <!--Add js counter lib-->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+
+        <!--add wow js lib-->
+        <script src="js/wow.min.js"></script>
+
+        <!--Custom Js-->
+        <script src="js/custom.js"></script>
+        
     </body>
 
 

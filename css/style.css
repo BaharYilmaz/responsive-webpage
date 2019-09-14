@@ -43,6 +43,45 @@ background-color: #5B32AE;
     text-align: center;
     margin-top: 45px;
 }
+/*Navigation*/
+
+.navbar-default{
+    background-color:transparent ;
+    border-color: #444;
+    z-index: 110;/*?*/
+    transition: all 1s;/*geçiş 1 saniye*/
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #dfdfdf;
+    font-family: "Raleway",sans-serif;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color: #5B32AE;
+}
+.navbar-default .navbar-nav > li > a:focus{
+    color: #dfdfdf;
+}
+.navbar-brand{
+    padding: 9px 15px;
+}
+.navbar-default .navbar-nav> .active>a,
+.navbar-default .navbar-nav> .active>a:hover,
+.navbar-default .navbar-nav> .active>a:focus{
+    background-color: transparent;
+    color:#5B32AE;
+}
+
+
+
+
+
 /*header*/
 
 .header{
@@ -90,8 +129,8 @@ background-color: #5B32AE;
 .btn-download:visited
 {
     background: transparent;
-    color: rgb(104, 71, 170);
-    border-color:  rgb(104, 71, 170);
+    color:#5B32AE;
+    border-color:#5B32AE;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
@@ -268,7 +307,7 @@ position: absolute;
 top:-8;
 right: 0;
 font-size: 40px;
-color: rgb(17, 17, 17);
+color: #5B32AE;
 width: 90px;
 height: 90px;
 text-align: center; 
@@ -298,7 +337,7 @@ text-align: center;
    top:0;
    left:0;
    font-size: 40px;
-   color: rgb(17, 17, 17);
+   color: #5B32AE;
    width: 90px;
    height: 90px;
    text-align: left; 
@@ -393,7 +432,9 @@ text-align: center;
 
 .download-now img{
     width: 100%;
-    margin-top: -75px;
+    margin-top: -130px;
+    margin-bottom: -60px;
+
 }
 .available-on{
     background-color: rgb(52, 53, 52);
@@ -401,7 +442,7 @@ text-align: center;
     margin-top: -8px;
 }
 .available-title{
-    padding-top: 75px;
+    padding-top: 40px;
 }
 .available-title h2{
     color: #dfdfdf;
@@ -457,4 +498,121 @@ text-align: center;
 }
 .available-on-item:hover div.available-on-inner{
     opacity: 1;
+}
+
+/* contact us */
+
+.contact-us-form .form-control{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: transparent;
+    border:1px solid #727272;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    opacity: .8;
+    outline: 0px !important;/**/
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+#message{
+    height: 117px;
+    resize:none;
+}
+
+.submit-btn,
+.submit-btn:active,
+.submit-btn:focus,
+.submit-btn:visited{
+    background-color: transparent;
+    border:1px  solid #5B32AE;
+    border-radius: 4px;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 23px;
+    color: #5B32AE;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.submit-btn:hover{
+    background: #5B32AE;
+    color: #fff;
+    border-color:#5B32AE;
+}
+.social-icons{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.social-icons ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.social-icons ul li{
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+}
+.social-icons ul li a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #727272;
+    border-radius: 3px;
+    width: 55px;
+    height: 55px;
+    line-height:64px;
+    color: #727272;
+}
+.social-icons ul li a:hover{
+    background-color: #5B32AE;
+    border:1px solid #5B32AE;
+    color: #fff;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.social-icons ul li a i{
+    font-size:30px;
+}
+.footer{
+    background-color: rgb(52, 53, 52);
+    padding-bottom: 35px;
+    padding-top: 35px;
+    border-bottom: 10px solid #5B32AE;
+}
+#copyright{
+    padding-top: 15px;
+    width: 50%;
+}
+#copyright p{
+    color: #dfdfdf;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#copyright p a{
+    color: #5B32AE;
+}
+.scroll-top{
+    text-align: right;
+}
+.scroll-top a{
+background-color: #5B32AE;
+padding: 25px 25px 15px 25px;
+}
+.scroll-top a i 
+{
+    text-decoration: none;
+    color: #dfdfdf;
+    font-size: 40px;
 }
